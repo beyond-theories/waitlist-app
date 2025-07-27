@@ -10,6 +10,7 @@
   --primary-foreground: #ffffff;
 
   --muted: #525e6f;
+  --muted-foreground: #ebebeb;
 
   --font-sans: "DM Sans", sans-serif;
 }
@@ -22,6 +23,7 @@
   --color-primary-foreground: var(--primary-foreground);
 
   --color-muted: var(--muted);
+  --color-muted-foreground: var(--color-muted-foreground);
 
   --font-sans: var(--font-sans);
 }
