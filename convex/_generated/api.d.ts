@@ -8,6 +8,7 @@
  * @module
  */
 
+import type * as emails_waitlist from "../emails/waitlist.js";
 import type * as emails from "../emails.js";
 import type * as waitlist from "../waitlist.js";
 
@@ -26,6 +27,7 @@ import type {
  * ```
  */
 declare const fullApi: ApiFromModules<{
+  "emails/waitlist": typeof emails_waitlist;
   emails: typeof emails;
   waitlist: typeof waitlist;
 }>;

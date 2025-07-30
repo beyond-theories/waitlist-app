@@ -1,12 +1,15 @@
 import { WaitListForm } from "./waitlist-form";
 import { Socials } from "./socials";
 import creatorsImage from "@/assets/creators.png";
+import { useQuery } from "convex/react";
+import { api } from "../../convex/_generated/api";
 
 type WaitListHomeProps = {
   onSuccess: () => void;
 };
 
 export const WaitListHome = ({ onSuccess }: WaitListHomeProps) => {
+  const waitlistCount = useQuery(api.waitlist.getWaitListCount);
   return (
     <div className="flex flex-col gap-12 lg:gap-[71px]">
       <div className="flex flex-col gap-3 lg:gap-5">
@@ -28,7 +31,8 @@ export const WaitListHome = ({ onSuccess }: WaitListHomeProps) => {
               alt=""
             />
             <p className="text-background text-sm lg:text-lg font-medium">
-              1,221 + Creators Have Already Joined
+              {waitlistCount ? waitlistCount.toLocaleString() : 0} + Creators
+              Have Already Joined
             </p>
           </div>
         </div>
