@@ -67,7 +67,7 @@ export const WaitListForm = ({ onSuccess }: WaitListFormProps) => {
         />
         <button
           disabled={isSubmitting}
-          className="inline-flex h-[37px] lg:h-[49px] w-[110px] lg:w-[142px] items-center justify-center bg-primary text-primary-foreground rounded-[18px] p-[10px] text-[13px] font-semibold cursor-pointer disabled:bg-primary/10"
+          className="inline-flex h-[37px] lg:h-[49px] w-[110px] lg:w-[142px] items-center justify-center bg-primary text-primary-foreground rounded-[18px] p-[10px] text-[13px] font-semibold cursor-pointer disabled:bg-primary/90"
         >
           {isSubmitting ? "Joining..." : "Join Waitlist"}
         </button>

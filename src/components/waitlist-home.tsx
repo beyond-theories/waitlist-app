@@ -1,8 +1,11 @@
 import { WaitListForm } from "./waitlist-form";
-import { Socials } from "./socials";
-import creatorsImage from "@/assets/creators.png";
 import { useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
+
+import creatorsImage from "@/assets/creators.png";
+import instagram from "@/assets/instagram.svg";
+import linkedin from "@/assets/linkedin.svg";
+import x from "@/assets/x.svg";
 
 type WaitListHomeProps = {
   onSuccess: () => void;
@@ -36,7 +39,23 @@ export const WaitListHome = ({ onSuccess }: WaitListHomeProps) => {
             </p>
           </div>
         </div>
-        <Socials />
+        <div className="flex items-center justify-between mt-auto w-full lg:w-[999px] mx-auto">
+          <p className="text-[#ebebeb]/50 flex items-center gap-4 text-xs lg:text-lg">
+            <span className="block h-[1px] w-[36px] lg:w-[88px] bg-[#ebebeb]/50"></span>
+            support@kollabo.com
+          </p>
+          <div className="flex items-center gap-4">
+            <a href="#">
+              <img src={linkedin} alt="LinkedIn" />
+            </a>
+            <a href="#">
+              <img src={x} alt="X" />
+            </a>
+            <a href="#">
+              <img src={instagram} alt="Instagram" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

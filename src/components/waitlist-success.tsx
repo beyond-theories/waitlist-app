@@ -1,6 +1,7 @@
 import successImage from "@/assets/success-image.png";
-
-import { Socials } from "./socials";
+import instagram from "@/assets/instagram-black.svg";
+import linkedin from "@/assets/linkedin-black.svg";
+import x from "@/assets/x-black.svg";
 
 export const WaitListSuccess = () => {
   return (
@@ -13,7 +14,23 @@ export const WaitListSuccess = () => {
         src={successImage}
         alt=""
       />
-      <Socials />
+      <div className="flex items-center justify-between mt-auto w-full lg:w-[999px] mx-auto">
+        <p className="text-foreground flex items-center gap-4 text-xs lg:text-lg">
+          <span className="block h-[1px] w-[36px] lg:w-[88px] bg-foreground"></span>
+          support@kollabo.com
+        </p>
+        <div className="flex items-center gap-4">
+          <a href="#">
+            <img src={linkedin} />
+          </a>
+          <a href="#">
+            <img src={x} />
+          </a>
+          <a href="#">
+            <img src={instagram} />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
