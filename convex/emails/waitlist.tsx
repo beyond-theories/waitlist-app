@@ -26,7 +26,7 @@ export const WaitListEmail = ({
             {/* Logo */}
             <Section className="flex justify-start mb-6">
               <Img
-                src="https://uncommon-goat-163.convex.cloud/api/storage/2708bec9-0a12-48a2-9920-7ba4ab8c35c5"
+                src="https://jazzy-pithivier-61103f.netlify.app/logo.svg"
                 alt="Kollabo Logo"
                 width="100"
               />
@@ -89,9 +89,9 @@ export const WaitListEmail = ({
             <Text className="text-sm leading-6">
               Warmly,
               <br />
-              Moses Afolabi
+              Moses
               <br />
-              Founder, Kollabo
+              Co-Founder, Kollabo
             </Text>
           </Container>
         </Body>
