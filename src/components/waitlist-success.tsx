@@ -1,6 +1,6 @@
 import successImage from "@/assets/success-image.png";
-import instagram from "@/assets/instagram-black.svg";
-import linkedin from "@/assets/linkedin-black.svg";
+// import instagram from "@/assets/instagram-black.svg";
+// import linkedin from "@/assets/linkedin-black.svg";
 import x from "@/assets/x-black.svg";
 
 export const WaitListSuccess = () => {
@@ -20,9 +20,9 @@ export const WaitListSuccess = () => {
           hello@usekollabo.com
         </p>
         <div className="flex items-center gap-4">
-          <a href="#">
+          {/* <a href="#">
             <img src={linkedin} />
-          </a>
+          </a> */}
           <a
             href="https://x.com/usekollabo?t=8QVz2rjS9m5b57NI81swkw&s=09"
             target="_blank"
@@ -30,9 +30,9 @@ export const WaitListSuccess = () => {
           >
             <img src={x} />
           </a>
-          <a href="#">
+          {/* <a href="#">
             <img src={instagram} />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

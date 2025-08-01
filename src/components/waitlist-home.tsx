@@ -3,8 +3,8 @@ import { useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
 
 import creatorsImage from "@/assets/creators.png";
-import instagram from "@/assets/instagram.svg";
-import linkedin from "@/assets/linkedin.svg";
+// import instagram from "@/assets/instagram.svg";
+// import linkedin from "@/assets/linkedin.svg";
 import x from "@/assets/x.svg";
 
 type WaitListHomeProps = {
@@ -45,9 +45,9 @@ export const WaitListHome = ({ onSuccess }: WaitListHomeProps) => {
             hello@usekollabo.com
           </p>
           <div className="flex items-center gap-4">
-            <a href="#">
+            {/* <a href="#">
               <img src={linkedin} alt="LinkedIn" />
-            </a>
+            </a> */}
             <a
               href="https://x.com/usekollabo?t=8QVz2rjS9m5b57NI81swkw&s=09"
               target="_blank"
@@ -55,9 +55,9 @@ export const WaitListHome = ({ onSuccess }: WaitListHomeProps) => {
             >
               <img src={x} alt="X" />
             </a>
-            <a href="#">
+            {/* <a href="#">
               <img src={instagram} alt="Instagram" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
