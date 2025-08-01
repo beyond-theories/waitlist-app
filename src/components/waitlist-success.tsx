@@ -17,13 +17,17 @@ export const WaitListSuccess = () => {
       <div className="flex items-center justify-between mt-auto w-full lg:w-[999px] mx-auto">
         <p className="text-foreground flex items-center gap-4 text-xs lg:text-lg">
           <span className="block h-[1px] w-[36px] lg:w-[88px] bg-foreground"></span>
-          support@kollabo.com
+          hello@usekollabo.com
         </p>
         <div className="flex items-center gap-4">
           <a href="#">
             <img src={linkedin} />
           </a>
-          <a href="#">
+          <a
+            href="https://x.com/usekollabo?t=8QVz2rjS9m5b57NI81swkw&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={x} />
           </a>
           <a href="#">

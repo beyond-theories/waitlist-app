@@ -12,12 +12,12 @@ type WaitListHomeProps = {
 };
 
 export const WaitListHome = ({ onSuccess }: WaitListHomeProps) => {
-  const waitlistCount = useQuery(api.waitlist.getWaitListCount);
+  const waitlistCount = useQuery(api.waitlist.getWaitListCount, {});
   return (
     <div className="flex flex-col gap-12 lg:gap-[71px]">
       <div className="flex flex-col gap-3 lg:gap-5">
         <h1 className="text-center text-[1.375rem] lg:text-6xl font-bold leading-[1.42] lg:leading-[1.3] max-w-full lg:max-w-[65.3rem] mx-auto">
-          Collaboration That Goes Beyond Talk This is Where Work Gets Done.
+          Collaboration That Goes Beyond Talk. This is Where Work Gets Done.
         </h1>
         <p className="text-muted text-base lg:text-lg font-medium leading-[1.4] max-w-full lg:max-w-[41.875rem] text-center mx-auto">
           A platform where creators and teams turn real ideas into real
@@ -42,13 +42,17 @@ export const WaitListHome = ({ onSuccess }: WaitListHomeProps) => {
         <div className="flex items-center justify-between mt-auto w-full lg:w-[999px] mx-auto">
           <p className="text-[#ebebeb]/50 flex items-center gap-4 text-xs lg:text-lg">
             <span className="block h-[1px] w-[36px] lg:w-[88px] bg-[#ebebeb]/50"></span>
-            support@kollabo.com
+            hello@usekollabo.com
           </p>
           <div className="flex items-center gap-4">
             <a href="#">
               <img src={linkedin} alt="LinkedIn" />
             </a>
-            <a href="#">
+            <a
+              href="https://x.com/usekollabo?t=8QVz2rjS9m5b57NI81swkw&s=09"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={x} alt="X" />
             </a>
             <a href="#">
