@@ -24,6 +24,7 @@ export const addToWaitList = mutation({
 });
 
 export const getWaitListCount = query({
+  returns: v.number(),
   handler: async (ctx) => {
     const count = await ctx.db.query("waitlist").collect();
     return count.length;
